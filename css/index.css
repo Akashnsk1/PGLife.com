@@ -58,6 +58,13 @@
   width: 100%;
 }
 
+#unsupportedMessage {
+  display: none;
+  justify-content: center;
+  color: wheat;
+  font-size: large;
+  margin-top: 15px;
+}
 @media screen and (max-width: 600px){
 
   .city-img{
