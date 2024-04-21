@@ -14,8 +14,8 @@ const cityName = getParameterByName('city');
 // Update the breadcrumb with the city name
 document.getElementById('cityBreadcrumb').innerText = cityName;
 
-const cityname2 = document.getElementById('cityBreadcrumb');
+// const cityname2 = document.getElementById('cityBreadcrumb');
 
-document.getElementById('View').addEventListener('click', function () {
-    window.location.href = `property_detail.html?city=${encodeURIComponent(cityname2)}`;
-});
+// document.getElementById('View').addEventListener('click', function () {
+//     window.location.href = `property_detail.html?city=${encodeURIComponent(cityname2)}`;
+// });
