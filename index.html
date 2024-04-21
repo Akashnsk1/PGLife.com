@@ -7,7 +7,9 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet" />
     <link href="css/common.css" rel="stylesheet" />
     <link href="css/index.css" rel="stylesheet" />
 </head>
@@ -41,62 +43,66 @@
     </div>
     <div id="loading">
     </div>
-  
+
     <div class="container-fluid pg-search-container">
-      <div class="row justify-content-center mb-3 text-white">
-        <div class="col-auto">
-          <h2>&nbsp Happiness per Square Foot</h2>
-        </div>
-      </div>
-      <!-- Search Bar -->
-      <form class="" action="property_list.php" method="GET">
-        <div class="row justify-content-center">
-          <div class="col-md-6 col-sm-8">
-            <div class="input-group md-form form-sm form-2 pl-0">
-              <input name="city" class="form-control my-0 py-1 red-border" type="text" placeholder="Enter your city to search for PGs" aria-label="Search">
-              <div class="input-group-append">
-                <button type="submit" class="btn btn-dark">
-                    <i class="fas fa-search text-grey" aria-hidden="true"></i>
-                </button>
-              </div>
+        <div class="row justify-content-center mb-3 text-white">
+            <div class="col-auto">
+                <h2>&nbsp Happiness per Square Foot</h2>
             </div>
-          </div>
         </div>
-      </form>
+        <!-- Search Bar -->
+        <form id="searchForm">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-sm-8">
+                    <div class="input-group md-form form-sm form-2 pl-0">
+                        <input name="city" class="form-control my-0 py-1 red-border" id="cityInput" type="text"
+                            placeholder="Enter your city to search for PGs" aria-label="Search">
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-dark">
+                                <i class="fas fa-search text-grey" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <p id="unsupportedMessage" >We currently do not serve in your location.</p>
+
     </div>
-  
+
     <div class="city-container">
-      <div class="city-caption">
-        <h2>Major Cities</h2>
-      </div>
-      <div class="city-box">
-  
-        <div class="city-img">
-          <a href="property_list.html">
-            <img src="./img/delhi.png" alt="Delhi">
-          </a>
+        <div class="city-caption">
+            <h2>Major Cities</h2>
         </div>
-        <div class="city-img">
-          <a href="property_list.html">
-            <img src="./img/mumbai.png" alt="Mumbai">
-          </a>
+        <div class="city-box">
+
+            <div class="city-img">
+                <a href="property_list.html?city=Delhi">
+                    <img src="./img/delhi.png" alt="Delhi">
+                </a>
+            </div>
+            <div class="city-img">
+                <a href="property_list.html?city=Mumbai">
+                    <img src="./img/mumbai.png" alt="Mumbai">
+                </a>
+            </div>
+            <div class="city-img">
+                <a href="property_list.html">
+                    <img src="./img/hyderabad.png?city=Hyderabad" alt="Hyderabad">
+                </a>
+            </div>
+            <div class="city-img">
+                <a href="property_list.html?city=Bengaluru">
+                    <img src="./img/bangalore.png" alt="Bengaluru">
+                </a>
+            </div>
+
         </div>
-        <div class="city-img">
-          <a href="property_list.html">
-            <img src="./img/hyderabad.png" alt="Hyderabad">
-          </a>
-        </div>
-        <div class="city-img">
-          <a href="property_list.html">
-            <img src="./img/bangalore.png" alt="Bengaluru">
-          </a>
-        </div>
-  
-      </div>
     </div>
-  
-<!-- Modals -->
-    <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="signup-heading" aria-hidden="true">
+
+    <!-- Modals -->
+    <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="signup-heading"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -114,7 +120,8 @@
                                     <i class="fas fa-user"></i>
                                 </span>
                             </div>
-                            <input type="text" class="form-control" name="full_name" placeholder="Full Name" maxlength="30" required>
+                            <input type="text" class="form-control" name="full_name" placeholder="Full Name"
+                                maxlength="30" required>
                         </div>
 
                         <div class="input-group form-group">
@@ -123,7 +130,8 @@
                                     <i class="fas fa-phone-alt"></i>
                                 </span>
                             </div>
-                            <input type="text" class="form-control" name="phone" placeholder="Phone Number" maxlength="10" minlength="10" required>
+                            <input type="text" class="form-control" name="phone" placeholder="Phone Number"
+                                maxlength="10" minlength="10" required>
                         </div>
 
                         <div class="input-group form-group">
@@ -141,7 +149,8 @@
                                     <i class="fas fa-lock"></i>
                                 </span>
                             </div>
-                            <input type="password" class="form-control" name="password" placeholder="Password" minlength="6" required>
+                            <input type="password" class="form-control" name="password" placeholder="Password"
+                                minlength="6" required>
                         </div>
 
                         <div class="input-group form-group">
@@ -150,7 +159,8 @@
                                     <i class="fas fa-university"></i>
                                 </span>
                             </div>
-                            <input type="text" class="form-control" name="college_name" placeholder="College Name" maxlength="150" required>
+                            <input type="text" class="form-control" name="college_name" placeholder="College Name"
+                                maxlength="150" required>
                         </div>
 
                         <div class="form-group">
@@ -179,7 +189,8 @@
         </div>
     </div>
 
-    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-heading" aria-hidden="true">
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-heading"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -206,7 +217,8 @@
                                     <i class="fas fa-lock"></i>
                                 </span>
                             </div>
-                            <input type="password" class="form-control" name="password" placeholder="Password" minlength="6" required>
+                            <input type="password" class="form-control" name="password" placeholder="Password"
+                                minlength="6" required>
                         </div>
 
                         <div class="form-group">
@@ -224,12 +236,11 @@
             </div>
         </div>
     </div>
-   
-    
+
+
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/common.js"></script>
-  </body>
-  
-  </html>
-  
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
